@@ -1,0 +1,31 @@
+start 
+new a number
+new b number
+new c number
+new d number 
+set a 5
+set b 4
+set c 3 
+set d 2 
+new x number
+set x 1
+if (x>a)
+  log string "x>a>b>c>d"
+else
+	if (x>b)
+      log string "a>x>b>c>d"
+else
+  if (x>c)
+    log string  "a>b>x>c>d"
+else
+  if (x>d)
+    log string "a>b>c>x>d"
+else
+  log string "a>b>c>d>x"
+close
+  delete a
+delete b
+delete c
+delete d
+delete x
+finish
